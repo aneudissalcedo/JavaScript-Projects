@@ -125,9 +125,15 @@ Update_Display()
             Update_Display();
             return;
         }
+        if(target.classList.contains('equal-sign'))
+        {
+            Handle_Operator(target.value);
+            Update_Display();
+            return;
+        }
         if(target.classList.contains('decimal'))
         {
-            Calculator_Reset();
+            Input_Decimal(target.value);
             Update_Display;
             return;
         }
