@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ondblclick event</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="event" ondblclick="changeParagraph()">This paragraph change if double clicked!</p>
+        <script>
+            function changeParagraph()
+            {
+                var newParagraph = "The new paragraph is this one";
+                document.getElementById("event").innerHTML = newParagraph;
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
